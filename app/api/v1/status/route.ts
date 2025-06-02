@@ -3,8 +3,6 @@ import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { getConnectionCount, getDatabaseEngine, getDatabaseLatency, getDatabaseStatus, getMaxConnections, getPages } from './utils';
 
-const prisma = new PrismaClient();
-
 export async function GET(request: NextRequest) {
     const date = new Date()
     const aplicationPages = getPages()
