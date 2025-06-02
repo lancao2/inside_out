@@ -4,7 +4,6 @@ import { GET } from '../app/api/v1/status/route'; // ajuste o path conforme seu 
 
 
 const prisma = new PrismaClient();
-const date = new Date()
 
 export interface Pages {
     name: string,
